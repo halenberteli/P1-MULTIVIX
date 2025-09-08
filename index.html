@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio Sorveteria Mamute</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- Font Awesome para o ícone do Instagram -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    nav { scrollbar-width: none; }
+    nav::-webkit-scrollbar { display: none; }
+  </style>
+</head>
+<body class="bg-pink-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-[#00008B] p-4 shadow-md flex flex-col items-center">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjfmRtysixnLDUJn3wP0CX_8KqM824OI5lbQ&s" 
+         alt="Sorveteria Mamute" 
+         class="h-32 mb-2"> <!-- Logo maior -->
+    <h1 class="text-[#FFFF00] text-xl font-bold">🍦 Sorveteria Mamute</h1> <!-- Nome em amarelo -->
+  </header>
+
+  <!-- Categorias -->
+  <nav id="categorias" class="flex overflow-x-auto space-x-4 p-3 bg-white shadow-sm">
+    <button data-cat="Picolés" class="px-4 py-2 rounded-full bg-[#00008B] text-[#FFFF00] font-semibold">Picolés</button>
+    <button data-cat="Sorvetes" class="px-4 py-2 rounded-full bg-gray-100 text-gray-600">Sorvetes</button>
+    <button data-cat="Açaí" class="px-4 py-2 rounded-full bg-gray-100 text-gray-600">Açaí</button>
+  </nav>
+
+  <!-- Produtos -->
+  <main id="produtos" class="p-4 grid grid-cols-1 gap-4">
+    <!-- Picolé -->
+    <div class="produto bg-white rounded-2xl shadow-md p-4 flex items-center space-x-4" data-cat="Picolés">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb74BaCSfKCHVunuQbc5cyeHqAhSLmFqOFYw&s" alt="Picolé Brigadeiro" class="w-24 h-24 rounded-lg object-cover">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-gray-800">Picolé de Brigadeiro</h2>
+        <p class="text-sm text-gray-600">Saboroso picolé de chocolate com granulado crocante.</p>
+        <p class="text-xs text-gray-500 mt-1">Nutricional: Calorias: 150 kcal | Gordura: 7g | Açúcar: 18g</p>
+        <span class="text-[#00008B] font-bold">R$ 6,00</span>
+      </div>
+    </div>
+
+    <!-- Picolé2 -->
+    <div class="produto bg-white rounded-2xl shadow-md p-4 flex items-center space-x-4" data-cat="Picolés">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTzziHqibUMJgUuGK5tRNybhPpqVnvYcJMGuIg_oyiwaz4CESknThVA2dQN31qAZ-D5Y4&usqp=CAU" alt="Picolé Sensação" class="w-24 h-24 rounded-lg object-cover">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-gray-800">Picolé Sensação</h2>
+        <p class="text-sm text-gray-600">Uma explosão de cremosidade e sabor inigualável.</p>
+        <p class="text-xs text-gray-500 mt-1">Nutricional: Calorias: 250 kcal | Gordura: 10g | Açúcar: 30g</p>
+        <span class="text-[#00008B] font-bold">R$ 6,00</span>
+      </div>
+    </div>
+
+    <!-- Picolé3 -->
+    <div class="produto bg-white rounded-2xl shadow-md p-4 flex items-center space-x-4" data-cat="Picolés">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZ1beubI6kbcej2q5rzPkYZPiqdy3xTDV8A&s" alt="Picolé de Abacaxi com Coco" class="w-24 h-24 rounded-lg object-cover">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-gray-800">Picolé de Abacaxi com Coco</h2>
+        <p class="text-sm text-gray-600">Uma mistura de abacaxi com coco em um só lugar.</p>
+        <p class="text-xs text-gray-500 mt-1">Nutricional: Calorias: 250 kcal | Gordura: 10g | Açúcar: 30g</p>
+        <span class="text-[#00008B] font-bold">R$ 6,00</span>
+      </div>
+    </div>
+
+
+    <!-- Sorvete -->
+    <div class="produto bg-white rounded-2xl shadow-md p-4 flex items-center space-x-4" data-cat="Sorvetes">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4D4NXa3KlsV3nqzelkuN5rFu9fJID6_6Yg&s" alt="Sorvete Açaininho" class="w-24 h-24 rounded-lg object-cover">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-gray-800">Sorvete Açaininho</h2>
+        <p class="text-sm text-gray-600">Uma fusão incrível de açaí e creme de Ninho que vai te levar ao paraíso dos sabores.</p>
+        <p class="text-xs text-gray-500 mt-1">Nutricional: Calorias: 350 kcal | Gordura: 15g | Açúcar: 40g</p>
+        <span class="text-[#00008B] font-bold">R$ 10,00</span>
+      </div>
+    </div>
+
+    <!-- Sorvete2 -->
+    <div class="produto bg-white rounded-2xl shadow-md p-4 flex items-center space-x-4" data-cat="Sorvetes">
+      <img src="https://cardapioacaidecasa.festzap.com.br/_core/_uploads/147/2024/01/2047180124hfhekd20id.jpeg" alt="Sorvete Tentação" class="w-24 h-24 rounded-lg object-cover">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-gray-800">Sorvete Tentação</h2>
+        <p class="text-sm text-gray-600">Uma fusão incrível de sorvete de morango com pedaços de chocolate ao leite e uma cobertura de chocolate.</p>
+        <p class="text-xs text-gray-500 mt-1">Nutricional: Calorias: 350 kcal | Gordura: 15g | Açúcar: 40g</p>
+        <span class="text-[#00008B] font-bold">R$ 10,00</span>
+      </div>
+    </div>
+
+   <!-- Sorvete3 -->
+    <div class="produto bg-white rounded-2xl shadow-md p-4 flex items-center space-x-4" data-cat="Sorvetes">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn18HAyD0uzqeq640i2BMGXq75X75Se77kDQ&s" alt="Sorvete Choco Rocher" class="w-24 h-24 rounded-lg object-cover">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-gray-800">Sorvete Choco Rocher</h2>
+        <p class="text-sm text-gray-600">Uma fusão incrível de sorvete de chocolate, creme de avelã e amendoim crocante.</p>
+        <p class="text-xs text-gray-500 mt-1">Nutricional: Calorias: 350 kcal | Gordura: 15g | Açúcar: 40g</p>
+        <span class="text-[#00008B] font-bold">R$ 10,00</span>
+      </div>
+    </div>
+
+
+    <!-- Milk-shake -->
+    <div class="produto bg-white rounded-2xl shadow-md p-4 flex items-center space-x-4" data-cat="Milk-shakes">
+      <img src="https://via.placeholder.com/100.png" alt="Milk-shake Morango" class="w-24 h-24 rounded-lg object-cover">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-gray-800">Milk-shake de Morango</h2>
+        <p class="text-sm text-gray-600">Feito com morangos frescos e leite cremoso.</p>
+        <p class="text-xs text-gray-500 mt-1">Nutricional: Calorias: 150 kcal | Gordura: 7g | Açúcar: 18g</p>
+        <span class="text-[#00008B] font-bold">R$ 12,00</span>
+      </div>
+    </div>
+
+    <!-- Açaí -->
+    <div class="produto bg-white rounded-2xl shadow-md p-4 flex items-center space-x-4" data-cat="Açaí">
+      <img src="https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/170812864565cff9851d742_75_75.jpeg" alt="Açaí" class="w-24 h-24 rounded-lg object-cover">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-gray-800">Açaí</h2>
+        <p class="text-sm text-gray-600">Açaí 100%.</p>
+        <p class="text-xs text-gray-500 mt-1">Nutricional: Calorias: 220 kcal | Gordura: 5g | Açúcar: 20g</p>
+        <span class="text-[#00008B] font-bold">R$ 15,00</span>
+      </div>
+    </div>
+
+    <!-- Açaí Zero Açúcar -->
+    <div class="produto bg-white rounded-2xl shadow-md p-4 flex items-center space-x-4" data-cat="Açaí">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnV4V-wc1JIiIcEUGG157GcFYhur1bKTTHhA&s" alt="Açaí" class="w-24 h-24 rounded-lg object-cover">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-gray-800">Açaí Zero Açúcar</h2>
+        <p class="text-sm text-gray-600">Açaí puro totalmente sem açúcar.</p>
+        <p class="text-xs text-gray-500 mt-1">Nutricional: Calorias: 37 kcal | Gordura: 1,4g | Açúcar: 0g</p>
+        <span class="text-[#00008B] font-bold">R$ 15,00</span>
+      </div>
+    </div>
+
+   <!-- Creme de Cupuaçú -->
+    <div class="produto bg-white rounded-2xl shadow-md p-4 flex items-center space-x-4" data-cat="Açaí">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGGwaH_tybJ4PftiUtry0SrsExOCCgLQbM9A&s" alt="Creme de Cupuaçú" class="w-24 h-24 rounded-lg object-cover">
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-gray-800">Creme de Cupuaçú</h2>
+        <p class="text-sm text-gray-600">Ótima opção para turbinar seu açaí.</p>
+        <p class="text-xs text-gray-500 mt-1">Nutricional: Calorias: 199 kcal | Gordura: 3g | Açúcar: 20g</p>
+        <span class="text-[#00008B] font-bold">R$ 15,00</span>
+      </div>
+    </div>
+
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-[#00008B] p-4 text-center text-[#FFFF00] mt-6 space-y-2">
+    <p>📍 Rua São João, 238, Itacibá, Cariacica - ES</p>
+    <p class="flex justify-center items-center gap-2">
+      <i class="fa-brands fa-instagram text-pink-400 text-lg"></i>
+      <a href="https://www.instagram.com/mamute_itaciba?igsh=bWl0NGpsbThtbDN1" target="_blank" class="underline">
+        Acesse nosso Instagram
+      </a>
+    </p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const botoes = document.querySelectorAll('#categorias button');
+    const produtos = document.querySelectorAll('.produto');
+
+    botoes.forEach(botao => {
+      botao.addEventListener('click', () => {
+        const categoria = botao.getAttribute('data-cat');
+
+        // Atualiza estilo dos botões
+        botoes.forEach(b => b.classList.remove('bg-[#00008B]','text-[#FFFF00]'));
+        botoes.forEach(b => b.classList.add('bg-gray-100','text-gray-600'));
+        botao.classList.remove('bg-gray-100','text-gray-600');
+        botao.classList.add('bg-[#00008B]','text-[#FFFF00]');
+
+        // Mostra apenas os produtos da categoria
+        produtos.forEach(p => {
+          if (p.getAttribute('data-cat') === categoria) {
+            p.style.display = 'flex';
+          } else {
+            p.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Mostra só a primeira categoria no início
+    document.querySelector('#categorias button').click();
+  </script>
+
+</body>
+</html>
