@@ -10,6 +10,10 @@
     .nutri-info.active { display: block; }
     .tab-content { display: none; }
     .tab-content.active { display: block; }
+
+ #imageModal {
+    display: none;
+}
   </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -43,335 +47,183 @@
 </header>
 
 
-  <!-- Abas de categorias -->
-  <div class="flex justify-center bg-white shadow-md sticky top-0 z-10">
-    <button class="tab px-4 py-2 font-semibold rounded-t-lg bg-[#00008B] text-[#FFFF00]">Picolés</button>
-    <button class="tab px-4 py-2 font-semibold rounded-t-lg bg-gray-100 text-gray-600">Sorvetes</button>
-    <button class="tab px-4 py-2 font-semibold rounded-t-lg bg-gray-100 text-gray-600">Açaí</button>
-  </div>
+<!-- Abas de categorias -->
+<div class="flex justify-center bg-white shadow-md sticky top-0 z-10">
+  <button class="tab px-4 py-2 font-semibold rounded-t-lg bg-[#00008B] text-[#FFFF00]" data-target="picolés">Picolés</button>
+  <button class="tab px-4 py-2 font-semibold rounded-t-lg bg-gray-100 text-gray-600" data-target="sorvetes">Sorvetes</button>
+  <button class="tab px-4 py-2 font-semibold rounded-t-lg bg-gray-100 text-gray-600" data-target="açai">Açaí</button>
+</div>
 
-  <main class="p-6 max-w-7xl mx-auto">
-
-    <!-- Picolé de Abacaxi com Coco -->
-    <div class="tab-content active">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-        <!-- Exemplo de um produto -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://i.postimg.cc/J4jDBvKf/Whats-App-Image-2025-09-22-at-22-20-09-1.jpg" 
-               alt="Picolé de Abacaxi com Coco" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🍍🥥 Picolé de Abacaxi com Coco</h3>
-          <p class="text-sm text-gray-600 mt-1">Refrescante e tropical, combina o doce do abacaxi com o crocante do coco.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 6,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">110 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">22 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">1 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">3 g</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- Picolé de Graviola -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://i.postimg.cc/P5hLbyRP/Whats-App-Image-2025-09-22-at-22-20-09.jpg" 
-               alt="Picolé de Graviola" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🍃 Picolé de Graviola</h3>
-          <p class="text-sm text-gray-600 mt-1">Sabor marcante e levemente ácido, feito com polpa fresca.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 6,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">110 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">22 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">1 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">3 g</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- Picolé de Milho Verde -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://i.postimg.cc/1tTPWRRv/Whats-App-Image-2025-09-22-at-22-20-11-2.jpg" 
-               alt="Picolé de Milho Verde" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🌽 Picolé de Milho Verde</h3>
-          <p class="text-sm text-gray-600 mt-1">Cremoso e levemente adocicado, feito com milho verde natural.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 6,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">110 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">22 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">1 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">3 g</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- Picolé de Coco -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://i.postimg.cc/Y0W7TchM/Whats-App-Image-2025-09-22-at-22-20-11-1.jpg" 
-               alt="Picolé de Coco" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🥥 Picolé de Coco</h3>
-          <p class="text-sm text-gray-600 mt-1">Oferecendo um sabor tropical refrescante e com a textura característica do coco ralado.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 6,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">110 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">22 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">1 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">3 g</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- Picolé de Queijo com Goiabada -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://i.postimg.cc/1tTPWRRv/Whats-App-Image-2025-09-22-at-22-20-11-2.jpg" 
-               alt="Picolé de Queijo com Goiabada" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🧀🍓 Picolé de Queijo com Goiabada</h3>
-          <p class="text-sm text-gray-600 mt-1">Uma mistura de queijo com goibada em um só lugar.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 6,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">110 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">22 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">1 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">3 g</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- Picolé de Paçoquinha -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://i.postimg.cc/662GByZ5/Whats-App-Image-2025-09-22-at-22-20-10-1.jpg" 
-               alt="Picolé de Paçoquinha" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🥜 Picolé de Paçoquinha</h3>
-          <p class="text-sm text-gray-600 mt-1">Picolé refrescante que imita o sabor e a textura do doce tradicional de amendoim, a paçoca.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 6,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">110 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">22 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">1 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">3 g</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- Picolé de Chiclete -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://i.postimg.cc/141SQWq6/Whats-App-Image-2025-09-22-at-22-20-11.jpg" 
-               alt="Picolé de Chiclete" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🍬 Picolé de Chiclete</h3>
-          <p class="text-sm text-gray-600 mt-1">Tem o sabor e a cor característicos do chiclete, frequentemente com um recheio de sabor tutti-frutti.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 6,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">110 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">22 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">1 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">3 g</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- Replicar os outros picolés aqui -->
-        <!-- Picolé de Graviola, Milho Verde, Queijo com Goiabada, Paçoca, Chiclete, Coco -->
+<main class="p-6 max-w-7xl mx-auto">
+  <!-- Picolés -->
+  <section id="picolés" class="tab-content active">
+    <h2 class="text-2xl font-bold mb-4">🍡Picolés</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/J4jDBvKf/Whats-App-Image-2025-09-22-at-22-20-09-1.jpg" alt="Picolé de Abacaxi com Coco" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍍🥥 Picolé de Abacaxi com Coco</h3>
+        <p class="text-gray-600">R$ 6,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">80 kcal, 0g gordura</div>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/P5hLbyRP/Whats-App-Image-2025-09-22-at-22-20-09.jpg" alt="Picolé de Graviola" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍃 Picolé de Graviola</h3>
+        <p class="text-gray-600">R$ 6,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+	<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/1tTPWRRv/Whats-App-Image-2025-09-22-at-22-20-11-2.jpg" alt="Picolé de Milho Verde" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🌽 Picolé de Milho Verde</h3>
+        <p class="text-gray-600">R$ 6,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/Y0W7TchM/Whats-App-Image-2025-09-22-at-22-20-11-1.jpg" alt="Picolé de Coco" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🥥 Picolé de Coco</h3>
+        <p class="text-gray-600">R$ 6,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/1tTPWRRv/Whats-App-Image-2025-09-22-at-22-20-11-2.jpg" alt="Picolé de Queijo com Goiabada" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🧀🍓 Picolé de Queijo com Goiabada</h3>
+        <p class="text-gray-600">R$ 7,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/662GByZ5/Whats-App-Image-2025-09-22-at-22-20-10-1.jpg" alt="Picolé de Paçoquinha" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🥜 Picolé de Paçoquinha</h3>
+        <p class="text-gray-600">R$ 7,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/141SQWq6/Whats-App-Image-2025-09-22-at-22-20-11.jpg" alt="Picolé de Chiclete" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍬 Picolé de Chiclete</h3>
+        <p class="text-gray-600">R$ 7,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
       </div>
     </div>
+  </section>
 
-    <!-- Conteúdo Sorvetes -->
-    <div class="tab-content">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-        <!-- Sorvete Açaininho -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4D4NXa3KlsV3nqzelkuN5rFu9fJID6_6Yg&s" 
-               alt="Sorvete Açaininho" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🫐🍧 Sorvete Açaininho</h3>
-          <p class="text-sm text-gray-600 mt-1">Uma fusão incrível de açaí e creme de Ninho que vai te levar ao paraíso dos sabores.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 8,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">210 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">30 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">3 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">9 g</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- Sorvete Tentação -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://cardapioacaidecasa.festzap.com.br/_core/_uploads/147/2024/01/2047180124hfhekd20id.jpeg" 
-               alt="Sorvete Tentação" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🍫🍓🍦 Sorvete Tentação</h3>
-          <p class="text-sm text-gray-600 mt-1">Uma fusão incrível de sorvete de morango com pedaços de chocolate ao leite e uma cobertura de chocolate.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 8,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">210 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">30 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">3 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">9 g</td></tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- Sorvete Choco Rocher -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn18HAyD0uzqeq640i2BMGXq75X75Se77kDQ&s" 
-               alt="Sorvete Choco Rocher" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🍫🌰🍨 Sorvete Choco Rocher</h3>
-          <p class="text-sm text-gray-600 mt-1">Uma fusão incrível de sorvete de chocolate, creme de avelã e amendoim crocante.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 8,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">210 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">30 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">3 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">9 g</td></tr>
-            </table>
-          </div>
-        </div>
-        <!-- Replicar os outros sorvetes aqui -->
+  <!-- Sorvetes -->
+  <section id="sorvetes" class="tab-content">
+    <h2 class="text-2xl font-bold mb-4">🍦 Sorvetes</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4D4NXa3KlsV3nqzelkuN5rFu9fJID6_6Yg&s" alt="Sorvete Açaininho" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🫐🍧 Sorvete Açaininho</h3>
+        <p class="text-gray-600">R$ 10,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">150 kcal, 5g gordura</div>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://cardapioacaidecasa.festzap.com.br/_core/_uploads/147/2024/01/2047180124hfhekd20id.jpeg" alt="Sorvete Tentação" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍫🍓🍦 Sorvete Tentação</h3>
+        <p class="text-gray-600">R$ 10,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">220 kcal, 8g gordura</div>
+      </div>
+	<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn18HAyD0uzqeq640i2BMGXq75X75Se77kDQ&s" alt="Sorvete Choco Rocher" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍫🌰🍨 Sorvete Choco Rocher</h3>
+        <p class="text-gray-600">R$ 10,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">220 kcal, 8g gordura</div>
       </div>
     </div>
+  </section>
 
-    <!-- Conteúdo Açaí -->
-    <div class="tab-content">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-	<!-- Açaí -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/170812864565cff9851d742_75_75.jpeg" 
-               alt="Açaí" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🥣 Açaí</h3>
-          <p class="text-sm text-gray-600 mt-1">Açaí 100%.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 8,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">210 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">30 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">3 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">9 g</td></tr>
-            </table>
-          </div>
-        </div>
+  <!-- Açaí -->
+  <section id="açai" class="tab-content">
+    <h2 class="text-2xl font-bold mb-4">🥣 Açaí</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/170812864565cff9851d742_75_75.jpeg" alt="Açaí Tradicional" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🥣 Açaí Tradicional</h3>
+        <p class="text-gray-600">R$ 12,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">250 kcal, 6g gordura</div>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnV4V-wc1JIiIcEUGG157GcFYhur1bKTTHhA&s" alt="Açaí Zero Açúcar" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">❌🥣 Açaí Zero Açúcar</h3>
+        <p class="text-gray-600">R$ 14,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">280 kcal, 7g gordura</div>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGGwaH_tybJ4PftiUtry0SrsExOCCgLQbM9A&s" alt="Creme de Cupuaçú" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🥭🍦 Creme de Cupuaçú</h3>
+        <p class="text-gray-600">R$ 14,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">280 kcal, 7g gordura</div>
+      </div>
+    </div>
+  </section>
+</main>
 
-	<!-- Açaí Zero Açúcar -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnV4V-wc1JIiIcEUGG157GcFYhur1bKTTHhA&s" 
-               alt="Açaí Zero Açúcar" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">❌🥣 Açaí Zero Açúcar</h3>
-          <p class="text-sm text-gray-600 mt-1">Açaí puro totalmente sem açúcar.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 8,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">210 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">30 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">3 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">9 g</td></tr>
-            </table>
-          </div>
-        </div>
+<!-- Modal para exibir imagem maior -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+  <span id="closeModal" class="absolute top-4 right-6 text-white text-3xl cursor-pointer">&times;</span>
+  <img id="modalImage" src="" alt="Imagem ampliada" class="max-w-[90%] max-h-[90%] rounded-lg shadow-2xl">
+</div>
 
-	<!-- Creme de Cupuaçú -->
-        <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 p-4">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGGwaH_tybJ4PftiUtry0SrsExOCCgLQbM9A&s" 
-               alt="Creme de Cupuaçú" 
-               class="w-full h-40 rounded-xl object-cover mb-3">
-          <h3 class="text-lg font-bold text-gray-800">🥭🍦 Creme de Cupuaçú</h3>
-          <p class="text-sm text-gray-600 mt-1">Ótima opção para turbinar seu açaí.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="bg-[#00008B] text-[#FFFF00] px-3 py-1 rounded-full font-bold shadow">R$ 8,00</span>
-            <button onclick="toggleNutri(this)" class="text-sm text-[#00008B] underline">+ info</button>
-          </div>
-          <div class="nutri-info mt-3 text-sm text-gray-700">
-            <table class="w-full text-left border border-gray-200 rounded-lg">
-              <tr><td class="p-1">Calorias</td><td class="p-1">210 kcal</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Carboidratos</td><td class="p-1">30 g</td></tr>
-              <tr><td class="p-1">Proteínas</td><td class="p-1">3 g</td></tr>
-              <tr class="bg-gray-50"><td class="p-1">Gorduras</td><td class="p-1">9 g</td></tr>
-            </table>
-          </div>
-        </div>
-
-  </main>
-
-  <script>
-    // Alternar abas
-    const tabs = document.querySelectorAll('.tab');
-    const contents = document.querySelectorAll('.tab-content');
-
-    tabs.forEach((tab, index) => {
-      tab.addEventListener('click', () => {
-        // Ativa aba clicada
-        tabs.forEach(t => {
-          t.classList.remove('bg-[#00008B]','text-[#FFFF00]');
-          t.classList.add('bg-gray-100','text-gray-600');
-        });
-        tab.classList.remove('bg-gray-100','text-gray-600');
-        tab.classList.add('bg-[#00008B]','text-[#FFFF00]');
-
-        // Mostra conteúdo da aba
-        contents.forEach(c => c.classList.remove('active'));
-        contents[index].classList.add('active');
+<script>
+  // Tabs
+  document.querySelectorAll(".tab").forEach(button => {
+    button.addEventListener("click", () => {
+      document.querySelectorAll(".tab").forEach(b => {
+        b.classList.remove("bg-[#00008B]", "text-[#FFFF00]");
+        b.classList.add("bg-gray-100", "text-gray-600");
       });
-    });
+      button.classList.add("bg-[#00008B]", "text-[#FFFF00]");
+      button.classList.remove("bg-gray-100", "text-gray-600");
 
-    // Info nutricional
-    function toggleNutri(btn) {
-      const info = btn.parentElement.nextElementSibling;
-      info.classList.toggle('active');
-      btn.textContent = info.classList.contains('active') ? "- info" : "+ info";
+      const target = button.getAttribute("data-target");
+      document.querySelectorAll(".tab-content").forEach(content => {
+        content.classList.remove("active");
+      });
+      document.getElementById(target).classList.add("active");
+    });
+  });
+
+  // Modal de imagem
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeModal = document.getElementById("closeModal");
+
+  document.querySelectorAll("main img").forEach(img => {
+    img.addEventListener("click", function() {
+      modal.style.display = "flex";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+    });
+  });
+
+  closeModal.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
     }
-  </script>
+  };
+
+  // Mostrar/ocultar info nutricional
+  function toggleNutri(button) {
+    const info = button.parentElement.querySelector(".nutri-info");
+    info.classList.toggle("active");
+  }
+  window.toggleNutri = toggleNutri;
+</script>
 
 </body>
 </html>
+
