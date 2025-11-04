@@ -21,7 +21,7 @@
 <!-- Cabeçalho -->
 <header class="bg-[#00008B] text-[#FFFF00] text-center py-6 shadow-lg flex flex-col items-center">
   <!-- Logo -->
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjfmRtysixnLDUJn3wP0CX_8KqM824OI5lbQ&s" alt="Logo Sorveteria Mamute" class="h-32 h-24 mb-2 object-contain">
+  <img src="https://i.postimg.cc/nz1Bk5Ks/Chat-GPT-Image-28-de-out-de-2025-15-33-25.png" alt="Logo Sorveteria Mamute" class="h-32 h-24 mb-2 object-contain">
 
   <!-- Título e subtítulo -->
   <h1 class="text-3xl font-extrabold">🍨 Sorveteria Mamute - Cardápio Digital</h1>
@@ -60,51 +60,128 @@
     <h2 class="text-2xl font-bold mb-4">🍡Picolés</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
       <div class="bg-white p-4 rounded-lg shadow-md">
-        <img src="https://i.postimg.cc/J4jDBvKf/Whats-App-Image-2025-09-22-at-22-20-09-1.jpg" alt="Picolé de Abacaxi com Coco" class="rounded-lg mb-2 cursor-pointer">
+        <img src="https://i.postimg.cc/brYj4G7x/Whats-App-Image-2025-10-27-at-20-35-49-2.jpg" alt="Picolé de Abacaxi com Coco" class="rounded-lg mb-2 cursor-pointer">
         <h3 class="font-semibold">🍍🥥 Picolé de Abacaxi com Coco</h3>
-        <p class="text-gray-600">R$ 6,00</p>
+        <p class="text-gray-600">R$ 2,50</p>
         <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
         <div class="nutri-info text-xs text-gray-500 mt-2">80 kcal, 0g gordura</div>
       </div>
       <div class="bg-white p-4 rounded-lg shadow-md">
-        <img src="https://i.postimg.cc/P5hLbyRP/Whats-App-Image-2025-09-22-at-22-20-09.jpg" alt="Picolé de Graviola" class="rounded-lg mb-2 cursor-pointer">
+        <img src="https://i.postimg.cc/CLDWJsBG/Whats-App-Image-2025-10-27-at-20-35-45.jpg" alt="Picolé de Graviola" class="rounded-lg mb-2 cursor-pointer">
         <h3 class="font-semibold">🍃 Picolé de Graviola</h3>
-        <p class="text-gray-600">R$ 6,00</p>
+        <p class="text-gray-600">R$ 2,50</p>
         <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
         <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
       </div>
 	<div class="bg-white p-4 rounded-lg shadow-md">
-        <img src="https://i.postimg.cc/1tTPWRRv/Whats-App-Image-2025-09-22-at-22-20-11-2.jpg" alt="Picolé de Milho Verde" class="rounded-lg mb-2 cursor-pointer">
+        <img src="https://i.postimg.cc/DZZgDnxD/Whats-App-Image-2025-10-27-at-20-35-48.jpg" alt="Picolé de Milho Verde" class="rounded-lg mb-2 cursor-pointer">
         <h3 class="font-semibold">🌽 Picolé de Milho Verde</h3>
-        <p class="text-gray-600">R$ 6,00</p>
+        <p class="text-gray-600">R$ 2,50</p>
         <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
         <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
       </div>
 <div class="bg-white p-4 rounded-lg shadow-md">
-        <img src="https://i.postimg.cc/Y0W7TchM/Whats-App-Image-2025-09-22-at-22-20-11-1.jpg" alt="Picolé de Coco" class="rounded-lg mb-2 cursor-pointer">
+        <img src="https://i.postimg.cc/4NzSp4q8/Whats-App-Image-2025-10-27-at-20-35-45.jpg" alt="Picolé de Coco" class="rounded-lg mb-2 cursor-pointer">
         <h3 class="font-semibold">🥥 Picolé de Coco</h3>
-        <p class="text-gray-600">R$ 6,00</p>
+        <p class="text-gray-600">R$ 2,50</p>
         <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
         <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
       </div>
 <div class="bg-white p-4 rounded-lg shadow-md">
-        <img src="https://i.postimg.cc/1tTPWRRv/Whats-App-Image-2025-09-22-at-22-20-11-2.jpg" alt="Picolé de Queijo com Goiabada" class="rounded-lg mb-2 cursor-pointer">
+        <img src="https://i.postimg.cc/Xq9QKxHg/Whats-App-Image-2025-10-27-at-20-35-49.jpg" alt="Picolé de Queijo com Goiabada" class="rounded-lg mb-2 cursor-pointer">
         <h3 class="font-semibold">🧀🍓 Picolé de Queijo com Goiabada</h3>
-        <p class="text-gray-600">R$ 7,50</p>
+        <p class="text-gray-600">R$ 2,50</p>
         <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
         <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
       </div>
 <div class="bg-white p-4 rounded-lg shadow-md">
-        <img src="https://i.postimg.cc/662GByZ5/Whats-App-Image-2025-09-22-at-22-20-10-1.jpg" alt="Picolé de Paçoquinha" class="rounded-lg mb-2 cursor-pointer">
+        <img src="https://i.postimg.cc/Dwx5cS6T/Whats-App-Image-2025-10-27-at-20-35-49.jpg" alt="Picolé de Paçoquinha" class="rounded-lg mb-2 cursor-pointer">
         <h3 class="font-semibold">🥜 Picolé de Paçoquinha</h3>
-        <p class="text-gray-600">R$ 7,50</p>
+        <p class="text-gray-600">R$ 2,50</p>
         <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
         <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
       </div>
 <div class="bg-white p-4 rounded-lg shadow-md">
-        <img src="https://i.postimg.cc/141SQWq6/Whats-App-Image-2025-09-22-at-22-20-11.jpg" alt="Picolé de Chiclete" class="rounded-lg mb-2 cursor-pointer">
+        <img src="https://i.postimg.cc/7YVNx5pk/Whats-App-Image-2025-10-27-at-20-35-45.jpg" alt="Picolé de Chiclete" class="rounded-lg mb-2 cursor-pointer">
         <h3 class="font-semibold">🍬 Picolé de Chiclete</h3>
-        <p class="text-gray-600">R$ 7,50</p>
+        <p class="text-gray-600">R$ 2,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/XYQzqHyM/Whats-App-Image-2025-10-27-at-20-35-43.jpg" alt="Picolé Esquimó Brigadeiro" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍫 Picolé Esquimó Brigadeiro</h3>
+        <p class="text-gray-600">R$ 4,00</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/SNt9KcNG/Whats-App-Image-2025-10-27-at-20-35-44.jpg" alt="Picolé Delirio" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍫 Picolé Delirio</h3>
+        <p class="text-gray-600">R$ 2,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/GpRm3pYk/Whats-App-Image-2025-10-27-at-20-35-44-1.jpg" alt="Picolé Loukura" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍓Picolé Loukura</h3>
+        <p class="text-gray-600">R$ 2,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/PxPx9R1d/Whats-App-Image-2025-10-27-at-20-35-45-1.jpg" alt="Picolé Tradicional de Biscoito" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍪Picolé Tradicional de Biscoito</h3>
+        <p class="text-gray-600">R$ 2,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/NMHt1q15/Whats-App-Image-2025-10-27-at-20-35-46.jpg" alt="Picolé Tradicional de Torta de Limão" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍋Picolé Tradicional de Torta de Limão</h3>
+        <p class="text-gray-600">R$ 2,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/TY2Sxvph/Whats-App-Image-2025-10-27-at-20-35-46-1.jpg" alt="Picolé Tradicional de Uva" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍇Picolé Tradicional de Uva</h3>
+        <p class="text-gray-600">R$ 2,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/c1h9XkTp/Whats-App-Image-2025-10-27-at-20-35-47.jpg" alt="Picolé Tradicional de Limão" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍋Picolé Tradicional de Limão</h3>
+        <p class="text-gray-600">R$ 2,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/X7hgzRFj/Whats-App-Image-2025-10-27-at-20-35-47-1.jpg" alt="Picolé Tradicional de Morango" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍓Picolé Tradicional de Morango</h3>
+        <p class="text-gray-600">R$ 2,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/zGrkNndS/Whats-App-Image-2025-10-27-at-20-35-47-2.jpg" alt="Picolé Tradicional de Mousse de Maracujá" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🍨🥭Picolé Tradicional de Mousse de Maracujá</h3>
+        <p class="text-gray-600">R$ 2,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/pThjzTGd/Whats-App-Image-2025-10-27-at-20-35-48.jpg" alt="Picolé Tradicional de Céu Azul" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">☁️Picolé Tradicional de Céu Azul</h3>
+        <p class="text-gray-600">R$ 2,50</p>
+        <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
+        <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
+      </div>
+<div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://i.postimg.cc/brYj4G7x/Whats-App-Image-2025-10-27-at-20-35-49-2.jpg" alt="Picolé Tradicional de Tapioca" class="rounded-lg mb-2 cursor-pointer">
+        <h3 class="font-semibold">🥥🍮Picolé Tradicional de Tapioca</h3>
+        <p class="text-gray-600">R$ 2,50</p>
         <button onclick="toggleNutri(this)" class="text-sm text-blue-600 mt-1">Ver informações nutricionais</button>
         <div class="nutri-info text-xs text-gray-500 mt-2">120 kcal, 4g gordura</div>
       </div>
@@ -226,4 +303,5 @@
 
 </body>
 </html>
+
 
